@@ -1,0 +1,196 @@
+# =============================================================================
+# AirPurify AI — Backend Git Ignore Rules
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# 1. Environment Variables, Secrets & API Keys
+# -----------------------------------------------------------------------------
+.env
+.env.*
+*.env
+*credentials*.env
+atlas-credentials.env
+credentials.json
+client_secret*.json
+*.pem
+*.key
+*.crt
+*.pfx
+*.p12
+*.cer
+id_rsa
+id_ed25519
+
+# Allow environment templates
+!.env.example
+!.env.template
+
+# -----------------------------------------------------------------------------
+# 2. Python Bytecode, Caching & Binaries
+# -----------------------------------------------------------------------------
+__pycache__/
+**/*/__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.so
+*.dylib
+*.dll
+.Python
+
+# Packaging & Distribution
+develop-eggs/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# -----------------------------------------------------------------------------
+# 3. Virtual Environments
+# -----------------------------------------------------------------------------
+.venv/
+**/.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.conda/
+.python-version
+
+# -----------------------------------------------------------------------------
+# 4. Testing, Coverage, Linters & Type Checking
+# -----------------------------------------------------------------------------
+.pytest_cache/
+**/.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.tox/
+.nox/
+.mypy_cache/
+.ruff_cache/
+.pytype/
+.pyre/
+
+# -----------------------------------------------------------------------------
+# 5. Machine Learning & Jupyter Notebook Artifacts
+# -----------------------------------------------------------------------------
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+*.h5.tmp
+*.keras.tmp
+*.pkl.tmp
+*.joblib.tmp
+
+# -----------------------------------------------------------------------------
+# 6. Database Files, Storage & Backups
+# -----------------------------------------------------------------------------
+*.db
+*.db-shm
+*.db-wal
+*.db-journal
+*.sqlite
+*.sqlite3
+*.sqlite-shm
+*.sqlite-wal
+*.sqlite-journal
+**/*.db
+**/*.db-shm
+**/*.db-wal
+*.dump
+*.sql
+*.sql.gz
+*.rdb
+*.bson
+mongod.lock
+backups/
+
+# -----------------------------------------------------------------------------
+# 7. IoT, Embedded & Firmware Build Artifacts
+# -----------------------------------------------------------------------------
+.pio/
+.pioenvs/
+.piolibdeps/
+.arduino/
+arduino_build/
+arduino_cache/
+*.hex
+*.bin
+*.elf
+*.map
+*.eep
+sdkconfig.old
+
+# -----------------------------------------------------------------------------
+# 8. Logs, Temporary Files & Process IDs
+# -----------------------------------------------------------------------------
+logs/
+*.log
+*.log.*
+*.tmp
+*.tmp-*
+*.temp
+.tmp/
+tmp/
+temp/
+*.pid
+*.seed
+*.pid.lock
+*.bak
+*.old
+*.orig
+*.rej
+
+# -----------------------------------------------------------------------------
+# 9. Operating System & Editor Files
+# -----------------------------------------------------------------------------
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+ehthumbs.db
+ehthumbs_vista.db
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# IDEs & Editors
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+.idea/
+*.iml
+*.iws
+*.ipr
+*.swp
+*.swo
+.*.sw[a-p]
+\#*\#
+.cursor/

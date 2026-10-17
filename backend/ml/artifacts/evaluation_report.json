@@ -1,0 +1,30 @@
+{
+  "model_metrics": {
+    "mae": 11.746,
+    "rmse": 18.433,
+    "r2": 0.946,
+    "samples": 6298
+  },
+  "baselines": {
+    "persistence": {
+      "mae": 10.837,
+      "rmse": 18.725,
+      "r2": 0.9443,
+      "samples": 6298
+    },
+    "historical_mean": {
+      "mae": 62.528,
+      "rmse": 80.601,
+      "r2": -0.0322,
+      "samples": 6298
+    }
+  },
+  "target_variable": "pm2.5",
+  "units": "ug/m3",
+  "horizon_hours": 1,
+  "test_evaluation_timestamp": "2014-04-11 23:00:00",
+  "performance_relative_to_persistence": {
+    "mae_reduction_pct": -8.39,
+    "rmse_reduction_pct": 1.56
+  }
+}

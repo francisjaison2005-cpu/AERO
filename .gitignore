@@ -1,21 +1,279 @@
+# =============================================================================
+# AirPurify AI — Unified Git Ignore Rules (Frontend, Backend & IoT)
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# 1. Environment Variables, Secrets & Credentials (CRITICAL SECURITY)
+# -----------------------------------------------------------------------------
+.env
+.env.*
+*.env
+*credentials*.env
+atlas-credentials.env
+credentials.json
+client_secret*.json
+*.pem
+*.key
+*.crt
+*.pfx
+*.p12
+*.cer
+id_rsa
+id_ed25519
+
+# Allow environment templates and examples
+!.env.example
+!backend/.env.example
+!.env.template
+
+# -----------------------------------------------------------------------------
+# 2. Frontend / Node.js / Vite / React / TypeScript / Styling
+# -----------------------------------------------------------------------------
 node_modules/
 dist/
+dist-ssr/
 build/
+out/
+.next/
+.nuxt/
+
+# Caches & Build State
 .cache/
-.env*
 .vite/
+.turbo/
+.parcel-cache/
 vite.config.*.timestamp-*
 *.tsbuildinfo
-*-debug.log*
-logs/
-*.log
-.claude-replay.*
-.tmp-*
-/.figma/design-context/
+tsconfig.tsbuildinfo
+.eslintcache
+.stylelintcache
+.prettiercache
 
-# Platform-managed agentplat state, not project source. In the
-# client-initiated single-repo workspace layout (make's `Path: "."` spec) the
-# repo root IS the workspace root, so these land inside this repo rather than
-# beside it.
+# Package Managers
+.npm/
+.pnpm-store/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# Frontend Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# E2E & Browser Testing
+cypress/videos/
+cypress/screenshots/
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+coverage/
+
+# Bundle / Storybook Visual Reports
+storybook-static/
+report.html
+stats.json
+
+# -----------------------------------------------------------------------------
+# 3. Backend / Python / FastAPI / Machine Learning / Data Science
+# -----------------------------------------------------------------------------
+# Bytecode & Compiled Binaries
+__pycache__/
+**/*/__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.so
+*.dylib
+*.dll
+.Python
+
+# Packaging & Distribution
+develop-eggs/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+.venv/
+backend/.venv/
+**/.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.conda/
+.python-version
+
+# Pytest, Coverage, Linters & Type Checkers
+.pytest_cache/
+**/.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.tox/
+.nox/
+.mypy_cache/
+.ruff_cache/
+.pytype/
+.pyre/
+
+# Jupyter Notebooks & Data / Model Temporary Artifacts
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+*.h5.tmp
+*.keras.tmp
+*.pkl.tmp
+*.joblib.tmp
+
+# -----------------------------------------------------------------------------
+# 4. Database & Storage Artifacts (SQLite, MongoDB & Backups)
+# -----------------------------------------------------------------------------
+# SQLite database files and journals
+*.db
+*.db-shm
+*.db-wal
+*.db-journal
+*.sqlite
+*.sqlite3
+*.sqlite-shm
+*.sqlite-wal
+*.sqlite-journal
+**/*.db
+**/*.db-shm
+**/*.db-wal
+
+# Database dumps, lock files and backups
+*.dump
+*.sql
+*.sql.gz
+*.rdb
+*.bson
+mongod.lock
+backups/
+backend/backups/
+
+# -----------------------------------------------------------------------------
+# 5. IoT / Firmware / Embedded (ESP32, PMS7003, Arduino, PlatformIO)
+# -----------------------------------------------------------------------------
+.pio/
+.pioenvs/
+.piolibdeps/
+.arduino/
+arduino_build/
+arduino_cache/
+*.hex
+*.bin
+*.elf
+*.map
+*.eep
+sdkconfig.old
+
+# -----------------------------------------------------------------------------
+# 6. Logs, Temporary Files & Process IDs
+# -----------------------------------------------------------------------------
+logs/
+backend/logs/
+*.log
+*.log.*
+*.tmp
+*.tmp-*
+*.temp
+.tmp/
+tmp/
+temp/
+*.pid
+*.seed
+*.pid.lock
+*.bak
+*.old
+*.orig
+*.rej
+.claude-replay.*
+
+# -----------------------------------------------------------------------------
+# 7. Operating System & File System Artifacts
+# -----------------------------------------------------------------------------
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+ehthumbs.db
+ehthumbs_vista.db
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# -----------------------------------------------------------------------------
+# 8. Editors, IDEs & Tooling
+# -----------------------------------------------------------------------------
+# Visual Studio Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+*.code-workspace
+
+# JetBrains (PyCharm, WebStorm, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim / Emacs
+*.swp
+*.swo
+.*.sw[a-p]
+\#*\#
+
+# Cursor & AI Tooling
+.cursor/
+.cursorrules.local
+
+# -----------------------------------------------------------------------------
+# 9. Platform & Figma Agent State
+# -----------------------------------------------------------------------------
 /.plugins/
 /.opencode-skills/
+/.figma/design-context/
