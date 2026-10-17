@@ -9,7 +9,7 @@ This guide provides end-to-end operational instructions for deploying the **AirP
 ```
                       +---------------------------------------+
                       |          Clients & Devices            |
-                      |  - Edge Sensor Nodes (ESP32 / PMS5003)|
+                      |  - Edge Sensor Nodes (ESP32 / PMS7003)|
                       |  - Environmental Analytics Operators  |
                       +-------------------+-------------------+
                                           | HTTPS

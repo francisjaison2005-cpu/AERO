@@ -2,7 +2,7 @@
 
 Strict Pre-IoT Non-Hardware Constraint:
 This test client generates purely synthetic software simulation data.
-NO physical ESP32 microcontroller or PMS5003 laser sensor is connected.
+NO physical ESP32 microcontroller or PMS7003 laser sensor is connected.
 All test records are tagged 'SYNTHETIC-PHASE7-NODE-01' and 'Software Quality Chamber'.
 """
 

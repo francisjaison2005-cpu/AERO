@@ -639,4 +639,4 @@ The following site-specific deployment parameters must be provisioned into ESP32
 | **Frame Parsing** | 32-byte binary packet | **32-byte binary packet** | **Unchanged:** Same header (`0x42 0x4D`), frame length (28), and checksum formula. |
 | **Field Extraction** | Bytes 10..15 (PM1.0, PM2.5, PM10) | **Bytes 10..15 (PM1.0, PM2.5, PM10)** | **Unchanged:** Same atmospheric particulate registers. |
 | **API Ingestion Contract**| `POST /api/readings` (`ReadingCreate`) | `POST /api/readings` (`ReadingCreate`) | **Unchanged:** 100% compatible. Zero backend code changes. |
-| **Database & Frontend** | SQLite WAL schema, React 19 UI | SQLite WAL schema, React 19 UI | **Unchanged:** 100% compatible. Zero frontend code changes. |
+| **Database & Frontend** | SQLite WAL schema, React 19 UI | **MongoDB Atlas Cloud Cluster, React 19 UI** | **Unchanged:** 100% compatible. Zero frontend or schema breakage. |

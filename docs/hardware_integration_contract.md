@@ -3,7 +3,7 @@
 **Document Version:** 1.0.0 (Pre-IoT Software Freeze)  
 **Status:** Approved for Hardware Integration (Software Ready)  
 **Target Hardware:** Espressif ESP32 (ESP-WROOM-32 / ESP32-S3) + Plantower PMS7003 Laser Particulate Sensor  
-**Backend API Version:** v1.0.0 (FastAPI 0.115 / SQLAlchemy 2.0 / SQLite WAL)  
+**Backend API Version:** v1.0.0 (FastAPI 0.115 / PyMongo 4.19 / MongoDB Atlas)  
 
 ---
 
@@ -27,8 +27,8 @@ This contract governs the physical and communication interface between the edge 
 +-----------------------------------------------------------------------------------+
 | AIRPURIFY AI BACKEND (Fully Verified & Frozen)                                    |
 |                                                                                   |
-|  +---------------------+        SQLAlchemy        +----------------------------+  |
-|  | POST /api/readings  | -----------------------> | SQLite Database (WAL Mode) |  |
+|  +---------------------+         PyMongo          +----------------------------+  |
+|  | POST /api/readings  | -----------------------> | MongoDB Atlas (Cloud DB)   |  |
 |  +----------+----------+                          +--------------+-------------+  |
 |             |                                                    |                |
 |             v                                                    v                |

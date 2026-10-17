@@ -1810,7 +1810,7 @@ function AQIAndForecastIntegrityPanel({
                 <p style={{ marginTop: 4, fontSize: 10, color: "var(--muted)" }}>
                   <b>Dataset Provenance:</b> {provenance?.source_name || "UCI Beijing PM2.5 Dataset (Liang et al., 2015)"}.
                   <br />
-                  <i>Notice: Model pre-trained on historical benchmark records to validate the hybrid 1D-CNN-BiGRU pipeline. Edge PMS5003 fine-tuning is scheduled for Phase 5.</i>
+                  <i>Notice: Model pre-trained on historical benchmark records to validate the hybrid 1D-CNN-BiGRU pipeline. Edge PMS7003 fine-tuning is scheduled for Phase 5.</i>
                 </p>
               </div>
             ) : (

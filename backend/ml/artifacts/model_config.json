@@ -23,7 +23,7 @@
     "citation": "Liang, X., Zou, T., Guo, B., Li, S., Zhang, X., Zhang, S., Huang, H. and Chen, S.X. (2015). Assessing Beijing's PM2.5 pollution: severity, weather impact, APEC and numerical model predictions. Atmospheric Environment, 111, 40-52.",
     "time_range": "2010-01-01 00:00 to 2014-12-31 23:00 (Hourly, 43,824 records)",
     "target_pollutant": "PM2.5 (ug/m3)",
-    "sensor_type_disclaimer": "Trained on historical meteorological & air quality station records for pipeline validation. Physical PMS5003 sensor fine-tuning is scheduled for Phase 5."
+    "sensor_type_disclaimer": "Trained on historical meteorological & air quality station records for pipeline validation. Physical PMS7003 sensor fine-tuning is scheduled for Phase 5."
   },
   "dataset_audit": {
     "total_raw_records": 43824,
