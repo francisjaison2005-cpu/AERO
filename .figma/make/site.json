@@ -1,0 +1,10 @@
+{
+  "description": "Monitor and predict campus air quality with real-time data, interactive analytics, and alerts, empowering informed environmental decisions.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
